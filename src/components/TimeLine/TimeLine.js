@@ -19,7 +19,7 @@ const Timeline = () => {
 
     if (carouselRef.current) {
       const scrollLeft = Math.floor(carouselRef.current.scrollWidth * 0.7 * (i / TimeLineData.length));
-      
+
       scroll(carouselRef.current, scrollLeft);
     }
   }
@@ -44,9 +44,11 @@ const Timeline = () => {
 
   return (
     <Section id="about">
-      <SectionTitle>About Me</SectionTitle>
+      <br/><SectionTitle>About Me</SectionTitle>
       <SectionText>
-      The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+      I am an experienced full-stack software engineer with a passion for creative and collaborative problem-solving. I am constantly seeking opportunities to learn and grow in the software engineering field, and I believe my diverse background and skillset make me a valuable asset to any team! <br/><br/>
+      Fun fact: My Top 5 Clifton StrengthsFinder Themes are - <br/>
+      Communication, Activator, Adaptability, Strategic, Achiever <br/><br/>
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>

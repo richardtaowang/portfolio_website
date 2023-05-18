@@ -13,12 +13,13 @@ const Projects = () => (
         return (
           <BlogCard key={i}>
           <Img src={p.image} />
+            <br/><br/>
             <TitleContent>
               <HeaderThree title>{p.title}</HeaderThree>
               <Hr />
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>
-            <div>
+            <div><br/>
               <TitleContent>Stack</TitleContent>
               <TagList>
                 {p.tags.map((t, i) => {
