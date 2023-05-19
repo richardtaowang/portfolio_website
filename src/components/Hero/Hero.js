@@ -31,7 +31,7 @@ const Hero = (props) => {
           <SectionText>
             I am a full-stack software engineer passionate about providing cutting-edge tech solutions to improve and enrich people's lives.
           </SectionText>
-          <Button onClick={handleDownloadResume}>Download Resume</Button>
+          {/* <Button onClick={handleDownloadResume}>Download Resume</Button> */}
         </LeftSection>
       </Section>
     </>
