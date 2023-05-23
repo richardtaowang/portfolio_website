@@ -8,7 +8,8 @@ const Hero = (props) => {
 
   const handleDownloadResume = () => {
     // Replace 'YOUR_DROPBOX_LINK' with the actual public Dropbox link to your resume file
-    const resumeDownloadLink = 'https://www.dropbox.com/s/xt216fffhdcou9z/Richard_Wang_Resume.pdf?dl=1';
+    // const resumeDownloadLink = 'https://www.dropbox.com/s/xt216fffhdcou9z/Richard_Wang_Resume.pdf?dl=1';
+    const resumeDownloadLink = 'https://dl.dropboxusercontent.com/s/xt216fffhdcou9z/Richard_Wang_Resume.pdf?dl=1';
 
     // Create a temporary link element
     const downloadLink = document.createElement('a');
@@ -31,7 +32,8 @@ const Hero = (props) => {
           <SectionText>
             I am a full-stack software engineer passionate about providing cutting-edge tech solutions to improve and enrich people's lives.
           </SectionText>
-          {/* <Button onClick={handleDownloadResume}>Download Resume</Button> */}
+          <Button onClick={handleDownloadResume}>Download Resume</Button>
+          {/* <Button href="https://www.dropbox.com/s/xt216fffhdcou9z/Richard_Wang_Resume.pdf?dl=1">Download Resume</Button> */}
         </LeftSection>
       </Section>
     </>
