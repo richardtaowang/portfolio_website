@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { ExternalLinks, UtilityList, HeroList, HeroResumeLink} from '../Projects/ProjectsStyles';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
@@ -32,8 +33,11 @@ const Hero = (props) => {
           <SectionText>
             I am a full-stack software engineer passionate about providing cutting-edge tech solutions to improve and enrich people's lives.
           </SectionText>
-          <Button onClick={handleDownloadResume}>Download Resume</Button>
+          {/* <Button onClick={handleDownloadResume}>Download Resume</Button> */}
           {/* <Button href="https://www.dropbox.com/s/xt216fffhdcou9z/Richard_Wang_Resume.pdf?dl=1">Download Resume</Button> */}
+          <HeroList>
+            <HeroResumeLink href="https://www.dropbox.com/s/xt216fffhdcou9z/Richard_Wang_Resume.pdf?dl=1" target="_blank">Download Resume</HeroResumeLink>
+          </HeroList>
         </LeftSection>
       </Section>
     </>

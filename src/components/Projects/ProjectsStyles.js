@@ -22,6 +22,38 @@ row-gap: 3rem;
 }
 
 `
+
+export const HeroList = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+  margin: 2.5rem 5px 15% 5px;
+`;
+
+export const HeroResumeLink = styled.a`
+color:#FFFFFF;
+padding:1rem 1.5rem;
+background: ${({ alt }) => alt ? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' : 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
+border-radius: 15px;
+
+transition: .3s;
+font-size: ${({ alt }) => alt ? '20px' : '24px'};
+font-weight: 600;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+&:focus {
+  outline: none;
+}
+
+&:hover{
+  transform: scale(1.02);
+  filter: brightness(110%);
+}
+`
+
+
 export const BlogCard = styled.div`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
