@@ -29,6 +29,9 @@ export const HeroList = styled.ul`
   display: flex;
   justify-content: left;
   margin: 2.5rem 5px 15% 5px;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    justify-content: center;
+  }
 `;
 
 export const HeroResumeLink = styled.a`
@@ -51,6 +54,7 @@ cursor: pointer;
   transform: scale(1.02);
   filter: brightness(110%);
 }
+
 `
 
 
@@ -111,7 +115,8 @@ export const CardInfo = styled.p`
   line-height: 24px;
   text-align: justify;
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding:.3rem
+    text-align: center;
+    padding: 0 20px;
 
 }
 `;
