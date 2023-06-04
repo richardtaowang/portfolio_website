@@ -14,7 +14,7 @@ export const projects = [
       image: '/images/3.png',
       tags: ['React', 'PostgreSQL', 'Material UI', 'AWS:EC2/S3'],
     visit: 'https://github.com/rpp-kraken/SoundCrate',
-    source: 'https://www.sound-crate.com/',
+    source: 'https://www.dropbox.com/s/ayjslv1x3t0lcev/Sound%20Crate%20App%20Demo.mp4?dl=0',
     id: 2,
   },
   {
